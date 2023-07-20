@@ -1,0 +1,28 @@
+def notMultiplesOf(n, a):
+  def nmo_help(n, a, m):
+    if a * m > n:
+      true
+    else:
+      if a * m == n:
+        false
+      else:
+        nmo_help(n, a, m + 1)
+  in
+  nmo_help(n, a, 0)
+and
+def isPrime(n):
+  if n <= 1:
+    false
+  else:
+    def isPrime_help(n, i):
+      if i == n:
+        true
+      else:
+        if ! notMultiplesOf(n, i):
+          false
+        else:
+          isPrime_help(n, i + 1)
+    in
+    isPrime_help(n, 2)
+in
+print(isPrime(997)) && print(isPrime(9997))

@@ -1,0 +1,7 @@
+def f(): 1
+and
+def g(): f()
+and
+def h(): g()
+in
+h()

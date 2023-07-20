@@ -1,0 +1,11 @@
+def myPrint(e): print(e) and
+def loop(start, terminate, f):
+  let i = [start] in
+  if i[0] == terminate:
+    []
+  else:
+    f(i[0]);
+    i[0] := (i[0] + 1);
+    loop(i[0], terminate, f)
+in
+loop(1, 5, myPrint)

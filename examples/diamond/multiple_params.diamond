@@ -1,0 +1,4 @@
+def f(a, b, c, d, e, f, g):
+  print(a) + print(b) + print(c) + print(d) + print(e) + print(f) + print(g)
+in
+f(1, 2, 3, 4, 5, 6, 7)

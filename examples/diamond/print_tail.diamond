@@ -1,0 +1,9 @@
+def g(b): b
+and
+def f(a):
+  def h(): g(1) in
+  print(
+    g(a)
+  )
+in
+f(1)

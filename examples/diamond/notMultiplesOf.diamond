@@ -1,0 +1,13 @@
+def notMultiplesOf(n, a):
+  def nmo_help(n, a, m):
+    if a * m > n:
+      true
+    else:
+      if a * m == n:
+        false
+      else:
+        nmo_help(n, a, m + 1)
+  in
+  nmo_help(n, a, 0)
+in
+notMultiplesOf(10001, 7)

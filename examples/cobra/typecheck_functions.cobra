@@ -1,0 +1,11 @@
+print(
+  if isnum(4): print(isbool(4))
+  else: -1
+)
+||
+print(
+  if isbool(false): print(isnum(true))
+  else: -2
+)
+&&
+true

@@ -1,0 +1,5 @@
+type Ginger in
+let a = Ginger in
+type Ginger in
+let b = Ginger in
+a == b

@@ -1,0 +1,8 @@
+let arr1 = [1, 2], arr2 = [1, 2], empty_arr = [] in
+print(arr1 == arr2);
+let arr3 = arr1 in
+print(arr1 == arr3);
+print(arr1 == false);
+print(arr1 == true);
+print(empty_arr == empty_arr);
+arr1 == arr1

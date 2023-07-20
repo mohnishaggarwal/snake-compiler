@@ -1,0 +1,11 @@
+let arr1 = [0, 1, 2, 3],
+    arr2 = [arr1, true, false, true, false],
+    arr3 = [5, 0, arr2, [10, 11], true, 3]
+in
+arr3[1] := arr3;
+print([0][0]);
+print(arr3[1]);
+print(arr1[3]);
+print(arr2[4]);
+print(arr2[3]);
+print(arr3[3])

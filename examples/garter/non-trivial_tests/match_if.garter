@@ -1,0 +1,10 @@
+type Ginger(size) in
+if true:
+  type Fish in
+  match Ginger(3) default 5:
+    case Ginger(size) => size,
+    case Func(f) => f(9),
+    case Num(n) => n
+  end
+else:
+  0

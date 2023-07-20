@@ -1,0 +1,11 @@
+def myPrint(e): print(e) and
+
+def loop2(start, terminate, f):
+  if start == terminate:
+    []
+  else:
+    f(start);
+    loop2(start + 1, terminate, f)
+in
+
+loop2(1, 5, myPrint)

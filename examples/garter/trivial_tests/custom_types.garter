@@ -1,0 +1,6 @@
+type Some(val), None in
+let a = Some(true) in
+match a default false:
+  case Some(val) => val,
+  case None => false
+end

@@ -1,0 +1,5 @@
+let a = [0, false], b = [true, 1] in
+print(a[1] := b);
+print(a);
+print(b[0] := a);
+b

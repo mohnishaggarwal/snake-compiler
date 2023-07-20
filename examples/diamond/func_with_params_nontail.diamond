@@ -1,0 +1,9 @@
+def f1(a, b):
+a + b
+and
+def f2(a):
+sub1(a)
+in
+let a = 5, b = 8, c = f1(a, b)
+in
+f2(c) * f1(b, c)

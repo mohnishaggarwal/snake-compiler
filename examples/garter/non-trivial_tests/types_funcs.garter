@@ -1,0 +1,5 @@
+def foo(x):
+  x + 1
+in
+type Some(val), None in
+foo(match Some(4) default 0: case None => 1 end)

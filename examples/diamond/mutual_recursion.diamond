@@ -1,0 +1,13 @@
+def isEven(a):
+  if a == 0:
+    true
+  else:
+    if a == 1:
+      false
+    else:
+      isOdd(a - 1)
+and
+def isOdd(a):
+  isEven(a - 1)
+in
+isEven(5)

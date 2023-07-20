@@ -1,0 +1,2 @@
+let a = [match 5 default 0: case Num(val) => val end, 5, 2]
+in a[type None in match None default 2: case Num(n) => n end] := 5

@@ -1,0 +1,5 @@
+let a = 1 in
+let b = 1 in
+let c = sub1(b) in
+let d = add1(c) in
+add1(d)

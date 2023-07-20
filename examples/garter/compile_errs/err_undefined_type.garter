@@ -1,0 +1,6 @@
+type Some(val) in 
+match Some(43) default 1:
+  case Some(val) => val,
+  case Num(val) => val,
+  case None => 0
+end

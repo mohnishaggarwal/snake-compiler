@@ -1,0 +1,13 @@
+target
+runtime/*.o
+runtime/*.s
+runtime/*.a
+runtime/*.lib
+runtime/*.exe
+runtime/custom_types.txt
+generate_integration_tests.sh
+errors.txt
+.DS_Store
+examples/tmp.egg
+submission.zip
+/*.snake

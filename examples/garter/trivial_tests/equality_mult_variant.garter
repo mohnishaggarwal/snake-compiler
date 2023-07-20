@@ -1,0 +1,3 @@
+type Ginger(size) in
+let a = Ginger(1), b = Ginger(1) in
+a == b

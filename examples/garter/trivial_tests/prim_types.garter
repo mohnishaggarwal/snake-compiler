@@ -1,0 +1,6 @@
+match 5 default 0:
+  case Func(fun) => fun(),
+  case Num(num) => num + 1,
+  case Bool(bool) => !bool,
+  case Array(arr) => arr
+end

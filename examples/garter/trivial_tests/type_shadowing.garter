@@ -1,0 +1,6 @@
+type Foo in
+type Foo(a) in
+let b = Foo(1) in
+match b default 0:
+  case Foo(val) => val
+end

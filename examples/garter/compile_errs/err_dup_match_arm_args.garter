@@ -1,0 +1,4 @@
+type Some(val1, val2) in
+match Some(4, 5) default 0:
+  case Some(v, v) => v
+end

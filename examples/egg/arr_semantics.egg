@@ -1,0 +1,5 @@
+let arr1 = [1, 2], arr2 = arr1, arr = [arr1, arr2] in
+let arr3 = arr2 in
+arr1[1] := 4;
+print(arr);
+arr3

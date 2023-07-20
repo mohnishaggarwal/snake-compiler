@@ -1,0 +1,16 @@
+def f(): 1 in
+let a = true, b = [1, 2, 3], c = length(b) in
+let lam = lambda a: a end in
+print(isbool(a));
+print(isarray(a));
+print(isnum(a));
+print(isbool(b));
+print(isarray(b));
+print(isnum(b));
+print(isbool(c));
+print(isarray(c));
+print(isnum(c));
+print(isbool(lam));
+print(isarray(lam));
+print(isnum(lam));
+0

@@ -1,0 +1,5 @@
+type Some(value), None in
+match Some(true) default false:
+  case Some(v1, v2) => v1,
+  case None => []
+end

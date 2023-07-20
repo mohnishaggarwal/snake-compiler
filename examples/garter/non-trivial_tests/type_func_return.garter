@@ -1,0 +1,10 @@
+type Some(value), None in
+def foo(val):
+  match Some(val) default None:
+    case None => None,
+    case Some(v) => Some(v)
+  end
+in
+match foo(5) default 0:
+  case Some(val) => val
+end

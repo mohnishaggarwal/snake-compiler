@@ -1,0 +1,5 @@
+let a = 1, b = 2 in
+let lam = lambda a: a + b end in
+def one(): 1 in
+let one = one() in
+lam(one)

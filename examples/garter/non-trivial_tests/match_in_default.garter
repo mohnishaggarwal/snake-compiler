@@ -1,0 +1,3 @@
+match 5 default type Some(val) in match Some(9) default 0: case Some(val) => val + 1 end:
+  case Array(arr) => arr
+end

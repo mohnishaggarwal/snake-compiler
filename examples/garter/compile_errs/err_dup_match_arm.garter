@@ -1,0 +1,5 @@
+type Some(value) in
+match Some(true) default false:
+  case Some(v) => v,
+  case Some(v) => []
+end

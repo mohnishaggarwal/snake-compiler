@@ -1,0 +1,108 @@
+let unit = [] in
+
+def cons(hd, tl):
+  [hd, tl]
+and
+
+def car(pair):
+  pair[0]
+and
+
+def cdr(pair):
+  pair[1]
+and
+
+def set_car(pair, val):
+  pair[0] := val
+and
+
+def set_cdr(pair, val):
+  pair[1] := val
+and
+
+def len(list):
+  if isunit(list):
+    0
+  else:
+    1 + len(cdr(list))
+and
+
+def list(arr):
+  if length(arr) == 0: []
+  else:
+    let retarr = [[]] in
+    def list_help(arr, i):
+      retarr[0] := cons(arr[i], retarr[0]);
+      if i == 0:
+        retarr[0]
+      else:
+        list_help(arr, i - 1)
+    in
+    list_help(arr, length(arr) - 1);
+    retarr[0]
+and
+
+def isunit(list):
+  length(list) == 0
+and
+
+def map(proc, list):
+  if isunit(list): unit
+  else:
+    cons(proc(car(list)), map(proc, cdr(list)))
+and
+
+def filter(pred, list):
+  if isunit(list): unit
+  else:
+    if pred(car(list)):
+      cons(car(list), filter(pred, cdr(list)))
+    else:
+      filter(pred, cdr(list))
+and
+
+def reduce(combiner, list):
+  if len(list) == 1:
+    car(list)
+  else:
+    combiner(car(list), reduce(combiner, cdr(list)))
+and
+
+def clone(list):
+  if isunit(list): unit
+  else:
+    cons(car(list), cdr(list))
+and
+
+def range(begin, terminate):
+  if begin == terminate: unit
+  else:
+    cons(begin, range(begin + 1, terminate))
+and
+
+def contains(elem, list):
+  reduce(lambda a, b: a || b end, map(equals(elem), list))
+and
+
+def equals(a):
+  lambda b : b == a end
+and
+
+def isMultipleOf(x, n):
+  if n == 0: true
+  else:
+    if n < x: false
+    else:
+      isMultipleOf(x, n - x)
+in
+
+let r = range(2, 30) in
+def sieve(state, p):
+  let state = filter(lambda elem: ! contains(elem, map(lambda x: x * p end, r)) end, state) in
+  let p_cands = filter(lambda elem: elem > p end, state) in
+  if isunit(p_cands):
+    state
+  else:
+    sieve(state, car(p_cands))
+in
+sieve(r, 2)

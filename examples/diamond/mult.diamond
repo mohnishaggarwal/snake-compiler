@@ -1,0 +1,11 @@
+def mult(x, y):
+  def loop(i):
+    if i == 0:
+      0
+    else:
+      x + loop(i - 1)
+  in
+  loop(y)
+in
+
+mult(5, 3)

@@ -1,0 +1,3 @@
+type Some(val), None in
+print(Some(2));
+0

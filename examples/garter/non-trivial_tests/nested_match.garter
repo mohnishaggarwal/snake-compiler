@@ -1,0 +1,4 @@
+match 5 default 0:
+  case Array(arr) => arr,
+  case Num(num) => match 5 default 0: case Num(val) => val + num end
+end

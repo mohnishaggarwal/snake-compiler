@@ -1,0 +1,4 @@
+type Some(val), None in
+print(match Some(5) default 0:
+  case Some(val) => print(val)
+end)

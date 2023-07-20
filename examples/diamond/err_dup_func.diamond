@@ -1,0 +1,5 @@
+def func(): 1
+and
+def func(): 2
+in
+func()

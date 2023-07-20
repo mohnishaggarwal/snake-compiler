@@ -1,0 +1,9 @@
+type Burger(sauce, ham) in
+type Ginger(size) in
+match Ginger(2) default 5:
+  case Burger(sauce, ham) => sauce,
+  case Array(arr) => arr,
+  case Func(f) => f,
+  case Num(n) => n,
+  case Bool(b) => b
+end

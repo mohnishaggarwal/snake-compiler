@@ -1,0 +1,3 @@
+def evil(): evil() in
+print(lambda a: a end);
+evil

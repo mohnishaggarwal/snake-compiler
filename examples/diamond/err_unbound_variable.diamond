@@ -1,0 +1,7 @@
+def f(a): a
+and
+def g(b): let a = 1 in a
+and
+def h(): def a(): false in a()
+in
+a

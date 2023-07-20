@@ -1,0 +1,6 @@
+if def f(): false in ! f():
+  let a = (def f(): def g(): 1 and def h(): g() + 1 in h() in f()) in
+  def g(a): a * 2 in
+  g(a)
+else:
+  false

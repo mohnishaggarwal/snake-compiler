@@ -1,0 +1,7 @@
+def apply(a, f):
+  f(a)
+in
+def addone(a):
+  add1(a)
+in
+apply(5, addone)

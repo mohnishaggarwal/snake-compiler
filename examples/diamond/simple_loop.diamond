@@ -1,0 +1,9 @@
+def f(a):
+  print(
+    if a == 0:
+      0
+    else:
+      f(a - 1) + 1
+  )
+in
+f(5)
